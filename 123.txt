@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Story Generator</title>
+        <link rel="stylesheet" type="text/css" href="story.css">
+        <script src="story.js"></script>
+    </head>
+    <body onload="generate();">
+        <h1>Story Generator</h1>
+        <p>Author: HAO Jiadong<br>Student ID: 20084595d</p>
+        <p>Enter appropriate values in all of the text boxes. Then click the Done button to generate a story with your entered values plugged into it.</p>
+        <h2 id="title">A Wise Man</h2>
+        <p id="description">
+        </p>
+        <table>
+            <tr><td class="prompt">noun:</td><td><input type="text" id="first"></td></tr>
+            <tr><td class="prompt">past tense verb:</td><td><input type="text" id="second"></td></tr>
+            <tr><td class="prompt">noun:</td><td><input type="text" id="third"></td></tr>
+            <tr><td class="prompt">past tense verb:</td><td><input type="text" id="fourth"></td></tr>
+            <tr><td class="prompt">adverb:</td><td><input type="text" id="fifth"></td></tr>
+        </table>
+        <input type="button" class="button" value="Done" onclick="generate();">
+        <input type="button" class="button" value="Restart" onclick="restart();">
+    </body>
+</html>
